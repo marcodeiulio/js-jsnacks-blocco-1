@@ -1,6 +1,5 @@
 // # SNACK 2
 // L’utente inserisce due parole in successione, con due prompt. Il software stampa prima la parola più corta, poi la parola più lunga.
-//! Non funziona!!!! La parola più lunga è sempre la stessa.
 
 const pagePrint = document.getElementById('higher_number');
 
@@ -18,11 +17,11 @@ if (!(isNaN(firstWord)) || !(isNaN(secondWord)) || firstWordLength === 0 || seco
 	message2 = 'Una delle due parole inserite non è valida. Ricaricare la pagina.';
 	lenghtiest = '';
 } else {
-	if (firstWord > secondWord) {
+	if (firstWordLength > secondWordLength) {
 		console.log(`La parola più lunga è ${firstWord}`);
 		message2 += firstWord;
 		lenghtiest += firstWordLength;
-	} else if (firstWord < secondWord) {
+	} else if (firstWordLength < secondWordLength) {
 		console.log(`La parola più lunga è ${secondWord}`);
 		message2 += secondWord;
 		lenghtiest += secondWordLength;
