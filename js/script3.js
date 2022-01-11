@@ -4,7 +4,7 @@
 let sum = 0;
 let validation = true;
 
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 10; i++) {
 	const number = parseInt(prompt('Aggiungi un numero.', '3').trim());
 	if (!isNaN(number)) {
 		sum += number;
